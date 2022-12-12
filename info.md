@@ -1,0 +1,12 @@
+Client ID: 683fd2cf-990c-40d9-b142-7a0c2a4f0fd9
+
+Client Secret ID: d5581903de2c515bb8d3d245b057adb9b5d31e86
+
+Stripe publish key:
+pk_test_51M9dXgDX2gn4WDlo9Wsh7ro7aqRP70TaCfYOSOmGVu03ZUulP9MzHM1aBHkIqmBUEWW3ZvrirtJ7ztk0CnnRPhv500sjotHcQj
+
+Stripe Secret key:
+sk_test_51M9dXgDX2gn4WDloJLjW5JeGogd1NP4ulDxqKuapc9Hzh9nCbILJVdawS8OJanMxj8DQeRHFunIOb0H4AStHGgSK00Ku6Jitqs
+
+Mapbox key:
+pk.eyJ1IjoiaW5zdGFwbGFubmVkIiwiYSI6ImNsYjJ2YnZ1ajA4OXczdXFoYTV1NWtseWYifQ.Dw10d4RyANCFdHzn1pRS3w
