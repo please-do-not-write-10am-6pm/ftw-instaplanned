@@ -9,7 +9,7 @@ Customers will be able to purchase either standard packages offered by the provi
 Standard, Premium) or get a Custom Offer for their needs.
 
 Both virtual on-demand, as well as time-specific and location-bound service packages will be
-available - similar to how Fiverr and AirBnB operates.
+available
 
 ## Stacks
 
@@ -53,10 +53,8 @@ There are three distinct user journeys in the platform:
 
 ## How to run
 
-<code>
-
+```
 git clone https://github.com/syed-instaplanned/ftw-instaplanned.git
 
 npm run dev
-
-</code>
+```
