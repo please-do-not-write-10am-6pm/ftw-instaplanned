@@ -54,7 +54,7 @@ There are three distinct user journeys in the platform:
 ## How to run
 
 ```
-git clone git@github.com:sharetribe/ftw-hourly.git             # clone this repository
+git clone https://github.com/instaplanned/ftw-instaplanned.git # clone this repository
 cd ftw-instaplanned/                                           # change to the cloned directory
 yarn install                                                   # install dependencies
 yarn run config                                                # add the mandatory env vars to your local config.
