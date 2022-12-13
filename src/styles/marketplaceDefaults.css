@@ -16,9 +16,9 @@
 :root {
   /* ================ Colors ================ */
 
-  --marketplaceColor: #0095b3;
-  --marketplaceColorLight: #00bfe6;
-  --marketplaceColorDark: #006a80;
+  --marketplaceColor: #b4409a;
+  --marketplaceColorLight: #e97ec7;
+  --marketplaceColorDark: #cc2f9a;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %230095b3;
@@ -43,7 +43,7 @@
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 
   /* ================ Font ================ */
-  --fontFamily: 'poppins', Helvetica, Arial, sans-serif;
+  --fontFamily: 'outfit', Helvetica, Arial, sans-serif;
 
   --fontWeightRegular: 400;
   --fontWeightMedium: 500;
@@ -504,10 +504,10 @@ textarea {
 
 .fontsLoaded {
   & body {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: 'outfit', Helvetica, Arial, sans-serif;
   }
   & button {
-    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    font-family: 'outfit', Helvetica, Arial, sans-serif;
   }
 }
 
@@ -735,7 +735,7 @@ textarea {
 /* Button font */
 /* Default font style for buttons */
 .buttonFont {
-  font-family: 'poppins', Helvetica, Arial, sans-serif;
+  font-family: 'outfit', Helvetica, Arial, sans-serif;
   font-weight: var(--fontWeightSemiBold);
   font-size: 16px;
   line-height: 24px;

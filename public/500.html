@@ -9,29 +9,29 @@
     <style>
 
      /**
-      * Poppins font is downloaded from Google Fonts
-      * but served from sharetribe.com assets.
+      * Outfit font is downloaded from Google Fonts
+      * but served from assets locally in order to improve performance.
       *
-      * https://fonts.google.com/specimen/Poppins
+      * https://fonts.google.com/specimen/Outfit
       */
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Medium.ttf') format('truetype');
         font-weight: 500; /* Medium */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-SemiBold.ttf') format('truetype');
         font-weight: 600; /* SemiBold */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Bold.ttf') format('truetype');
         font-weight: 700; /* Bold */
         font-style: normal;
       }
@@ -122,7 +122,7 @@
       }
 
       .fontsLoaded body {
-        font-family: poppins, Helvetica, Arial, sans-serif;
+        font-family: outfit, Helvetica, Arial, sans-serif;
         opacity: 1;
       }
 
@@ -195,11 +195,11 @@
             return;
           }
 
-          var poppinsMedium = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf") format("truetype")', { style: 'normal', weight: '500' });
-          var poppinsSemibold = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf") format("truetype")', { style: 'normal', weight: '600' });
-          var poppinsBold = new FontFace('poppins', 'url("https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf") format("truetype")', { style: 'normal', weight: '700' });
+          var outfitMedium = new FontFace('outfit', 'url("/static/fonts/Outfit-Medium.ttf") format("truetype")', { style: 'normal', weight: '500' });
+          var outfitSemibold = new FontFace('outfit', 'url("/static/fonts/Outfit-SemiBold.ttf") format("truetype")', { style: 'normal', weight: '600' });
+          var outfitBold = new FontFace('outfit', 'url("/static/fonts/Outfit-Bold.ttf") format("truetype")', { style: 'normal', weight: '700' });
 
-          Promise.all([poppinsMedium.load(), poppinsSemibold.load(), poppinsBold.load()])
+          Promise.all([outfitMedium.load(), outfitSemibold.load(), outfitBold.load()])
             .then(function(values) {
               values.forEach(function(f) {
                 document.fonts.add(f);
