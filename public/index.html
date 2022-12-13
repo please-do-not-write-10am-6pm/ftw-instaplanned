@@ -26,41 +26,41 @@
 
     <style>
      /**
-      * Poppins font is downloaded from Google Fonts but served from sharetribe.com / CDN
+      * Outfit font is downloaded from Google Fonts but served from assets locally in order to improve performance
       */
 
       @font-face {
-        /* 'Poppins-Regular' */
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Regular.ttf') format('truetype');
+        /* 'Outfit-Regular' */
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Regular.ttf') format('truetype');
         font-weight: 400; /* Regular */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Medium.ttf') format('truetype');
         font-weight: 500; /* Medium */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-MediumItalic.ttf') format('truetype');
-        font-weight: 500; /* Medium italics */
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Light.ttf') format('truetype');
+        font-weight: 500; /* Medium light */
         font-style: italic;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-SemiBold.ttf') format('truetype');
         font-weight: 600; /* SemiBold */
         font-style: normal;
       }
 
       @font-face {
-        font-family: 'poppins';
-        src: url('https://assets-sharetribecom.sharetribe.com/webfonts/poppins/Poppins-Bold.ttf') format('truetype');
+        font-family: 'outfit';
+        src: url('/static/fonts/Outfit-Bold.ttf') format('truetype');
         font-weight: 700; /* Bold */
         font-style: normal;
       }
@@ -111,18 +111,18 @@
 
 
         // Fonts we use (Check font-face rules from <style> tag in <head> section)
-        var poppinsRegular = new FontFaceObserver('poppins', { weight: 400 });
-        var poppinsMedium = new FontFaceObserver('poppins', { weight: 500 });
-        var poppinsSemibold = new FontFaceObserver('poppins', { weight: 600 });
-        var poppinsBold = new FontFaceObserver('poppins', { weight: 700 });
+        var outfitRegular = new FontFaceObserver('outfit', { weight: 400 });
+        var outfitMedium = new FontFaceObserver('outfit', { weight: 500 });
+        var outfitSemibold = new FontFaceObserver('outfit', { weight: 600 });
+        var outfitBold = new FontFaceObserver('outfit', { weight: 700 });
 
         var fontLoadingTimeout = 5000;
 
         Promise.all([
-          poppinsRegular.load(null, fontLoadingTimeout),
-          poppinsMedium.load(null, fontLoadingTimeout),
-          poppinsSemibold.load(null, fontLoadingTimeout),
-          poppinsBold.load(null, fontLoadingTimeout)
+          outfitRegular.load(null, fontLoadingTimeout),
+          outfitMedium.load(null, fontLoadingTimeout),
+          outfitSemibold.load(null, fontLoadingTimeout),
+          outfitBold.load(null, fontLoadingTimeout)
         ])
           .then(function () {
             document.documentElement.classList.add("fontsLoaded");

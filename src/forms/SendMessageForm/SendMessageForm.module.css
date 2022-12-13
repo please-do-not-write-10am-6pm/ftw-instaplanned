@@ -78,7 +78,7 @@
 .submitButton {
   composes: button buttonText buttonBordersSecondary buttonColorsSecondary from global;
 
-  font-family: 'poppins', Helvetica, Arial, sans-serif;
+  font-family: 'outfit', Helvetica, Arial, sans-serif;
   font-weight: var(--fontWeightMedium);
   font-size: 14px;
   line-height: 18px;
