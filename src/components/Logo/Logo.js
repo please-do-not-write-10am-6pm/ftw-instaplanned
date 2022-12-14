@@ -23,7 +23,7 @@ const Logo = props => {
   // <img className={className} src={LogoImage} alt={config.siteTitle} {...rest} />
 
   return (
-    <TemporaryLogo
+    <IconLogo
       className={format === 'desktop' ? className : mobileClasses}
       format={format}
       {...rest}
