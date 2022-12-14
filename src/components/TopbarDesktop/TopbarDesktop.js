@@ -47,6 +47,30 @@ const TopbarDesktop = props => {
 
   const classes = classNames(rootClassName || css.root, className);
 
+  const homeNavigation = (
+    <NamedLink name="LandingPage" className={css.topNavigation}>
+      <span className={css.navigation}>
+        <FormattedMessage id="Navigation.home" />
+      </span>
+    </NamedLink>
+  );
+
+  const servicesNavigation = (
+    <NamedLink name="LandingPage" className={css.topNavigation}>
+      <span className={css.navigation}>
+        <FormattedMessage id="Navigation.services" />
+      </span>
+    </NamedLink>
+  );
+
+  const faqNavigation = (
+    <NamedLink name="LandingPage" className={css.topNavigation}>
+      <span className={css.navigation}>
+        <FormattedMessage id="Navigation.faqs" />
+      </span>
+    </NamedLink>
+  );
+
   const search = (
     <TopbarSearchForm
       className={css.searchLink}
@@ -174,6 +198,9 @@ const TopbarDesktop = props => {
           alt={intl.formatMessage({ id: 'TopbarDesktop.logo' })}
         />
       </NamedLink>
+      {homeNavigation}
+      {servicesNavigation}
+      {faqNavigation}
       {search}
       {listingLink}
       {createListingLink}

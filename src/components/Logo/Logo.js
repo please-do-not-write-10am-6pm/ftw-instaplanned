@@ -4,6 +4,16 @@ import classNames from 'classnames';
 import IconLogo from './IconLogo';
 import css from './Logo.module.css';
 
+const TemporaryLogo = props => {
+  const { className, format, ...rest } = props;
+  return (
+    <div className={className} {...rest}>
+      <span className={css.logoMobile}>LOGO</span>{' '}
+      {/* Use format prop to show either mobile or desktop logo class */}
+    </div>
+  );
+};
+
 const Logo = props => {
   const { className, format, ...rest } = props;
   const mobileClasses = classNames(css.logoMobile, className);
@@ -13,7 +23,7 @@ const Logo = props => {
   // <img className={className} src={LogoImage} alt={config.siteTitle} {...rest} />
 
   return (
-    <IconLogo
+    <TemporaryLogo
       className={format === 'desktop' ? className : mobileClasses}
       format={format}
       {...rest}

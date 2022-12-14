@@ -404,3 +404,34 @@
     }
   }
 }
+
+.topNavigation {
+  border-bottom: 0px solid;
+  transition: var(--transitionStyleButton);
+
+  margin-right: 20px;
+  flex-shrink: 0;
+  height: 100%;
+  padding: 0 12px 0 12px;
+
+  color: var(--matterColor);
+
+  &:hover {
+    color: var(--matterColorDark);
+    border-bottom: 4px solid var(--marketplaceColor);
+    border-radius: 0;
+    text-decoration: none;
+  }
+}
+
+.navigation {
+  composes: h5 from global;
+
+  display: inline-block;
+  margin: 28px 0;
+  text-decoration: inherit;
+
+  @media (--viewportMedium) {
+    margin: 28px 0;
+  }
+}
