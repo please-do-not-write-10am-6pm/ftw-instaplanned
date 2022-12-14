@@ -92,6 +92,21 @@ const TopbarMobileMenu = props => {
         <InlineTextButton rootClassName={css.logoutButton} onClick={onLogout}>
           <FormattedMessage id="TopbarMobileMenu.logoutLink" />
         </InlineTextButton>
+        <NamedLink name="LandingPage" className={css.navigationLink}>
+          {/* <span className={css.navigation}> */}
+          <FormattedMessage id="Navigation.home" />
+          {/* </span> */}
+        </NamedLink>
+        <NamedLink name="LandingPage" className={css.navigationLink}>
+          {/* <span className={css.navigation}> */}
+          <FormattedMessage id="Navigation.services" />
+          {/* </span> */}
+        </NamedLink>
+        <NamedLink name="LandingPage" className={css.navigationLink}>
+          {/* <span className={css.navigation}> */}
+          <FormattedMessage id="Navigation.faqs" />
+          {/* </span> */}
+        </NamedLink>
         <NamedLink
           className={classNames(css.inbox, currentPageClass('InboxPage'))}
           name="InboxPage"

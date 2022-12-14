@@ -63,6 +63,8 @@
   margin: 4px 0 6px 0;
   padding: 0;
 
+  margin-bottom: 100px;
+
   &:hover {
     text-decoration: underline;
     cursor: pointer;
