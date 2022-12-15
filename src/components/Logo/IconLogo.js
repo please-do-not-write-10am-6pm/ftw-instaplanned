@@ -8,7 +8,7 @@ const IconLogo = props => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="50"
+        width="55"
         height="40"
         viewBox="0 0 512 512"
         version="1.1"
